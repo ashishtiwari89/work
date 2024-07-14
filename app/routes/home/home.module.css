@@ -1,0 +1,10 @@
+.home {
+  overflow-x: hidden;
+}
+#project-2, #project-3 {
+  display: none !important;
+}
+
+._heading_e2qtd_2 {
+  font-size: 4.5rem !important;
+}
