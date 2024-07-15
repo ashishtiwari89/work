@@ -111,6 +111,7 @@ export default function App() {
           name="color-scheme"
           content={theme === 'light' ? 'light dark' : 'dark light'}
         />
+        <meta property="og:image" content="https://ashishtiwari.work/site-preview.png" />
         <style dangerouslySetInnerHTML={{ __html: themeStyles }} />
         <Meta />
         <Links />
@@ -149,6 +150,7 @@ export function ErrorBoundary() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#111" />
         <meta name="color-scheme" content="dark light" />
+        <meta property="og:image" content="https://ashishtiwari.work/site-preview.png" />
         <style dangerouslySetInnerHTML={{ __html: themeStyles }} />
         <Meta />
         <Links />
