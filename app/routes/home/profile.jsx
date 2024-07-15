@@ -21,14 +21,22 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      Hi, I’m Ashish, currently I live in Mountain View, California, actively looking for full time work opportunities as a Full-Stack Software Engineer, Data Enginneror or Web Developer.
-      I am a seasoned Full-Stack Software Engineer and Web Developer with over a decade of experience based in India.
+      Hello, I am Ashish. A Computer Science Graduate, Full Stack Software Engineer, and Web Developer with hands-on skills, 
+      and more than 10 years of work experience in developing enterprise solutions for small and medium-sized businesses. 
+      I'm Passionate about building high-quality software solutions that exceed client expectations and drive business results.
       </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
       I am proficint in Java, SpringBoot, Python, Django, JavaScript, React, Node.js, Next.js, Express.js, HTML, and CSS. 
-      My extensive background in both backend and frontend development allows them to craft robust, scalable, and user-friendly applications. 
-      My aim is to deliver high-quality solutions that drive business success.
+      My extensive background in both backend and frontend development allows me to craft robust, scalable, and user-friendly applications.
     </Text>
+      <Text className={styles.description} data-visible={visible} size="l" as="p">
+      TECHNICAL SKILLS
+      Programming Languages: C++, Java, Python, PHP, JavaScript, TypeScript, HTML, CSS, SQL, Golang
+      Libraries & Frameworks: Angular, Bootstrap, Tailwind CSS, jQuery, React, Node.js, Next, Express, Spring Boot, Django, Laravel, WordPress, Drupal, Magento, Shopify
+      Tools & Platforms: Eclipse, VSCode, IntelliJ, JUnit, PHPUnit, Jest, Mocha, Selenium, Jenkins, Docker, Kubernetes, Git, GitHub, GitLab, SVN, Amazon Web Services, Google Cloud Platform, Microsoft Azure
+      Databases & Big Data: MySQL, MongoDB, PostgreSQL, SQLite, S3, EC2, Apache Spark, Hadoop Cassandra, Kafka, Databricks, Elasticsearch, Tableau, Power BI
+      Methodologies: Agile/Scrum, OOP, TDD, CI/CD, Restful APIs, GraphQL, Microservices, Unit/Integration Testing
+      </Text>
   </Fragment>
 );
 
