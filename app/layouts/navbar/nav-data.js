@@ -19,7 +19,7 @@ export const navLinks = [
   },
   {
     label: 'Resume',
-    url: 'https://ashishtiwari.work/Resume_Ashish_Tiwari.pdf',
+    pathname: 'https://ashishtiwari.work/Resume_Ashish_Tiwari.pdf',
   },
 ];
 
