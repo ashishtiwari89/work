@@ -212,7 +212,7 @@
       background: var(--accent);
       transform: scaleX(0) translateY(-1px);
       transform-origin: right;
-      margin-right: 30px;
+      right: 30px;
     }
 
     @media (--mediaUseMotion) {
