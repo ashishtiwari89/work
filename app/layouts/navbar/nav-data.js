@@ -15,7 +15,7 @@ export const navLinks = [
   },
   {
     label: 'Resume',
-    pathname: 'https://docs.google.com/document/d/1OFdk-LsBkJ_fkgHJkq4G5Nh1EUjuBB6Biz-YxpsPrjw/edit?usp=drive_link',
+    pathname: 'https://ashishtiwari.work/Resume_Ashish_Tiwari.pdf',
   },
 ];
 
