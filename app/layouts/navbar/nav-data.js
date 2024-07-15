@@ -2,6 +2,10 @@ import config from '~/config.json';
 
 export const navLinks = [
   {
+    label: 'Home',
+    pathname: '/',
+  },
+  {
     label: 'About',
     pathname: '/#details',
   },
@@ -15,7 +19,7 @@ export const navLinks = [
   },
   {
     label: 'Resume',
-    pathname: 'https://ashishtiwari.work/Resume_Ashish_Tiwari.pdf',
+    url: 'https://ashishtiwari.work/Resume_Ashish_Tiwari.pdf',
   },
 ];
 
