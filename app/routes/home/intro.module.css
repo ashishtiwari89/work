@@ -73,7 +73,7 @@
 
 .title {
   letter-spacing: -0.03em;
-  font-size: 4rem;
+  font-size: 4.5rem;
 }
 
 .row {
@@ -336,6 +336,13 @@
   }
 }
 
+@media screen and (max-width: 980px) {
+  .title {
+    letter-spacing: -0.03em;
+    font-size: 4rem;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .title {
     letter-spacing: -0.03em;
@@ -362,5 +369,12 @@
   .title {
     letter-spacing: -0.03em;
     font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .title {
+    letter-spacing: -0.03em;
+    font-size: 1rem;
   }
 }
