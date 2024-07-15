@@ -29,14 +29,6 @@ const ProfileText = ({ visible, titleId }) => (
       I am proficint in Java, SpringBoot, Python, Django, JavaScript, React, Node.js, Next.js, Express.js, HTML, and CSS. 
       My extensive background in both backend and frontend development allows me to craft robust, scalable, and user-friendly applications.
     </Text>
-      <Text className={styles.description} data-visible={visible} size="l" as="p">
-      TECHNICAL SKILLS
-      Programming Languages: C++, Java, Python, PHP, JavaScript, TypeScript, HTML, CSS, SQL, Golang
-      Libraries & Frameworks: Angular, Bootstrap, Tailwind CSS, jQuery, React, Node.js, Next, Express, Spring Boot, Django, Laravel, WordPress, Drupal, Magento, Shopify
-      Tools & Platforms: Eclipse, VSCode, IntelliJ, JUnit, PHPUnit, Jest, Mocha, Selenium, Jenkins, Docker, Kubernetes, Git, GitHub, GitLab, SVN, Amazon Web Services, Google Cloud Platform, Microsoft Azure
-      Databases & Big Data: MySQL, MongoDB, PostgreSQL, SQLite, S3, EC2, Apache Spark, Hadoop Cassandra, Kafka, Databricks, Elasticsearch, Tableau, Power BI
-      Methodologies: Agile/Scrum, OOP, TDD, CI/CD, Restful APIs, GraphQL, Microservices, Unit/Integration Testing
-      </Text>
   </Fragment>
 );
 
