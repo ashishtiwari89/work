@@ -103,13 +103,14 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Project Title"
-        description="Project Description"
+        title="Ecommerce Website"
+        description="Developed a fully functional e-commerce website using React, Node.js, and MongoDB, designed to provide a seamless shopping experience for users. 
+        The platform features a responsive user interface, robust backend, and secure data management."
         buttonText="View Project"
         buttonLink="#"
         model={{
           type: 'laptop',
-          alt: 'Roots Ecommerce',
+          alt: 'Ecommerce',
           textures: [
             {
               srcSet: ` `,
