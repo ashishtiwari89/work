@@ -21,7 +21,7 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      Hello, I am Ashish. A Computer Science Graduate, Full Stack Software Engineer, and Web Developer with hands-on skills, 
+    ` I am Ashish Tiwari. A Computer Science Graduate, Full Stack Software Engineer, and Web Developer with hands-on skills, 
       and more than 10 years of work experience in developing enterprise solutions for small and medium-sized businesses. 
       I'm Passionate about building high-quality software solutions that exceed client expectations and drive business results.
       </Text>
