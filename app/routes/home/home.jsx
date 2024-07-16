@@ -125,13 +125,14 @@ export const Home = () => {
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Project Title"
-        description="Project Description"
+        title="Share Market App"
+        description="Developed a dynamic web application focused on providing real-time data and insights into the US share market using React, Redux, Next.js, and Express. 
+        The platform offers a rich user experience with comprehensive market analysis tools and user-specific features."
         buttonText="View Project"
         buttonLink="#"
         model={{
           type: 'phone',
-          alt: 'App login screen',
+          alt: 'Share Market App',
           textures: [
             {
               srcSet: ` `,
