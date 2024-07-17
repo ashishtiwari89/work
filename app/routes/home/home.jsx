@@ -56,7 +56,7 @@ export const Home = () => {
   const details = useRef();
 
   useEffect(() => {
-    const sections = [intro, projectOne, projectTwo, details];
+    const sections = [intro, projectOne, projectTwo, projectThree, details];
 
     const sectionObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -148,7 +148,7 @@ export const Home = () => {
 
        <ProjectSummary
         id="project-3"
-        sectionRef={projectOne}
+        sectionRef={projectThree}
         visible={visibleSections.includes(projectOne.current)}
         index={3}
         title="ELearning Website for Programming"
