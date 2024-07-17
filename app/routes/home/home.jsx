@@ -113,7 +113,7 @@ export const Home = () => {
           alt: 'Ecommerce Website',
           textures: [
             {
-              srcSet:  ,
+              srcSet: ` `,
               placeholder: sprTexturePlaceholder,
             },
           ],
@@ -135,11 +135,11 @@ export const Home = () => {
           alt: 'Share Market App',
           textures: [
             {
-              srcSet:  ,
+              srcSet: ` `,
               placeholder: gamestackTexturePlaceholder,
             },
             {
-              srcSet:  ,
+              srcSet: ` `,
               placeholder: gamestackTexture2Placeholder,
             },
           ],
@@ -160,7 +160,7 @@ export const Home = () => {
           alt: 'ELearning',
           textures: [
             {
-              srcSet:  ,
+              srcSet: ` `,
               placeholder: sprTexturePlaceholder,
             },
           ],
