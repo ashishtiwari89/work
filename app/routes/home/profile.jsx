@@ -53,6 +53,18 @@ export const Profile = ({ id, visible, sectionRef }) => {
         {({ visible, nodeRef }) => (
           <div className={styles.content} ref={nodeRef}>
             <div className={styles.column}>
+              <ProfileText visible={visible} titleId={titleId} />
+              <Button
+                secondary
+                className={styles.button}
+                data-visible={visible}
+                href="/contact"
+                icon="send"
+              >
+                Send me a message
+              </Button>
+            </div>
+            <div className={styles.column}>
               <div className={styles.tag} aria-hidden>
                 <Divider
                   notchWidth="64px"
@@ -76,18 +88,6 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   alt="Ashish Tiwari"
                 />
               </div>
-            </div>
-            <div className={styles.column}>
-              <ProfileText visible={visible} titleId={titleId} />
-              <Button
-                secondary
-                className={styles.button}
-                data-visible={visible}
-                href="/contact"
-                icon="send"
-              >
-                Send me a message
-              </Button>
             </div>
           </div>
         )}
