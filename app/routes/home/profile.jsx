@@ -21,18 +21,14 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I am a highly skilled and experienced Full Stack Software Engineer and Web Developer, with more than 10 years of hands-on experience in developing enterprise solutions for small and medium-sized businesses. 
+      I am a Computer Science Graduate, Full Stack Software Engineer and Web Developer, with hands-on skills, and more than 10 years of experience in developing enterprise solutions for small and medium-sized businesses. 
       My expertise spans across the full software development lifecycle, from initial requirements gathering and design to implementation, testing, and deployment.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      My technical proficiency includes a robust skill set in both backend and frontend development. I am proficient in Java, SpringBoot, Python, Django, JavaScript, React, Node.js, Next.js, Express.js, HTML, and CSS. 
-      This extensive background allows me to build comprehensive, scalable, and user-friendly applications that not only meet but exceed client expectations.
-    </Text>
-    <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I am passionate about delivering high-quality software solutions that drive business results and provide exceptional user experiences. 
-      My ability to translate business requirements into technical specifications and deliver efficient, maintainable, and scalable software solutions has been a key contributor to my success in the industry.
-    </Text>
-  </Fragment>
+      I am proficient in Java, SpringBoot, Python, Django, JavaScript, React, Node.js, Next.js, Express.js, HTML, and CSS. 
+      My extensive background in both backend and frontend development allows me to craft robust, scalable, and user-friendly applications.
+      I am passionate about delivering high-quality software solutions that drive business results and provide exceptional user experiences.
+    </Text>   
 );
 
 export const Profile = ({ id, visible, sectionRef }) => {
