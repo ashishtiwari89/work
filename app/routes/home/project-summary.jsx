@@ -53,7 +53,7 @@ export function ProjectSummary({
         type="project"
         data-visible={visible && modelLoaded}
         data-light={theme === 'light'}
-        style={cssProps({ opacity: svgOpacity })}
+        style={cssProps({ opacity: 0 })}
         className={styles.svg}
         data-device={device}
         viewBox="0 0 751 136"
