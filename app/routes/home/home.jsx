@@ -150,8 +150,8 @@ export const Home = () => {
         id="project-3"
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
-        index={1}
-        title="LearnLink ELearning for Programming Website"
+        index={3}
+        title="ELearning Website for Programming"
         description="Developed a comprehensive e-learning platform specifically designed for computer science and programming courses, utilizing React for the frontend and Java Spring Boot for the backend. 
       The platform aims to provide an interactive and user-friendly learning experience with extensive course management features."
         buttonText="View Project"
