@@ -167,9 +167,9 @@ export const Home = () => {
         }}
       />
       <Profile
+        id="about"
         sectionRef={about}
         visible={visibleSections.includes(about.current)}
-        id="about"
       />
       <Footer />
     </div>
