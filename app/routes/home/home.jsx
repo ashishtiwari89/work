@@ -42,7 +42,7 @@ export const links = () => {
 export const meta = () => {
   return baseMeta({
     title: 'Software Engineer + Web Developer',
-    description: `Portfolio of ${config.name}`,
+    description: `Portfolio website of ${config.name}`,
   });
 };
 
@@ -50,13 +50,13 @@ export const Home = () => {
   const [visibleSections, setVisibleSections] = useState([]);
   const [scrollIndicatorHidden, setScrollIndicatorHidden] = useState(false);
   const intro = useRef();
-  const about = useRef();
   const projectOne = useRef();
   const projectTwo = useRef();
   const projectThree = useRef();
+  const about = useRef();
   
   useEffect(() => {
-    const sections = [intro, about, projectOne, projectTwo, projectThree];
+    const sections = [intro, projectOne, projectTwo, projectThree, about];
 
     const sectionObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -97,11 +97,6 @@ export const Home = () => {
         id="intro"
         sectionRef={intro}
         scrollIndicatorHidden={scrollIndicatorHidden}
-      />
-      <Profile
-        sectionRef={about}
-        visible={visibleSections.includes(about.current)}
-        id="about"
       />
       <ProjectSummary
         id="project-1"
@@ -170,6 +165,11 @@ export const Home = () => {
             },
           ],
         }}
+      />
+      <Profile
+        sectionRef={about}
+        visible={visibleSections.includes(about.current)}
+        id="about"
       />
       <Footer />
     </div>
