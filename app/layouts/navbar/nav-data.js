@@ -18,8 +18,8 @@ export const navLinks = [
   },
   {
     label: 'Contact',
-    pathname: '/contact',
-    target: '_self',
+    pathname: 'mailto:ashishtiwari.b@gmail.com',
+    target: '_blank',
   },
 ];
 
