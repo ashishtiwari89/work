@@ -36,30 +36,6 @@ export const Navbar = () => {
     scrollToHash(target, () => setTarget(null));
   }, [location.pathname, scrollToHash, target]);
 
-  // Add scroll event listener to highlight active section
-  useEffect(() => {
-    const handleScroll = () => {
-      let activeSection = '';
-      navLinks.forEach(({ pathname }) => {
-        const section = document.getElementById(pathname.slice(1));
-        if (section) {
-          const rect = section.getBoundingClientRect();
-          if (rect.top <= 0 && rect.bottom >= 0) {
-            activeSection = pathname;
-          }
-        }
-      });
-      setCurrent(activeSection);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    handleScroll(); // call it initially to set the current section on page load
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
   // Handle swapping the theme when intersecting with inverse themed elements
   useEffect(() => {
     const navItems = document.querySelectorAll('[data-navbar-item]');
@@ -186,7 +162,7 @@ export const Navbar = () => {
               to={pathname}
               key={label}
               data-navbar-item
-              className={`${styles.navLink} ${current === pathname ? styles.active : ''}`}
+              className={styles.navLink}
               aria-current={getCurrent(pathname)}
               onClick={handleNavItemClick}
             >
@@ -205,7 +181,7 @@ export const Navbar = () => {
                 prefetch="intent"
                 to={pathname}
                 key={label}
-                className={`${styles.mobileNavLink} ${current === pathname ? styles.active : ''}`}
+                className={styles.mobileNavLink}
                 data-visible={visible}
                 aria-current={getCurrent(pathname)}
                 onClick={handleMobileNavClick}
