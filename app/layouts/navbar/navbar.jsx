@@ -155,7 +155,7 @@ export const Navbar = () => {
       <NavToggle onClick={() => setMenuOpen(!menuOpen)} menuOpen={menuOpen} />
       <nav className={styles.nav}>
         <div className={styles.navList}>
-          {navLinks.map(({ label, pathname }) => (
+          {navLinks.map(({ label, pathname, target }) => (
             <RouterLink
               unstable_viewTransition
               prefetch="intent"
@@ -165,6 +165,7 @@ export const Navbar = () => {
               className={styles.navLink}
               aria-current={getCurrent(pathname)}
               onClick={handleNavItemClick}
+              target={target}
             >
               {label}
             </RouterLink>
@@ -175,7 +176,7 @@ export const Navbar = () => {
       <Transition unmount in={menuOpen} timeout={msToNum(tokens.base.durationL)}>
         {({ visible, nodeRef }) => (
           <nav className={styles.mobileNav} data-visible={visible} ref={nodeRef}>
-            {navLinks.map(({ label, pathname }, index) => (
+            {navLinks.map(({ label, pathname, target }, index) => (
               <RouterLink
                 unstable_viewTransition
                 prefetch="intent"
@@ -185,6 +186,7 @@ export const Navbar = () => {
                 data-visible={visible}
                 aria-current={getCurrent(pathname)}
                 onClick={handleMobileNavClick}
+                target={target}
                 style={cssProps({
                   transitionDelay: numToMs(
                     Number(msToNum(tokens.base.durationS)) + index * 50
