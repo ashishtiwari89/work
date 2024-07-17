@@ -106,11 +106,11 @@ export const Home = () => {
         title="Ecommerce Website"
         description="Developed a fully functional e-commerce website using React, Node.js, and MongoDB, designed to provide a seamless shopping experience for users. 
         The platform features a responsive user interface, robust backend, and secure data management."
-        buttonText="View Project"
+        buttonText="View project"
         buttonLink="#"
         model={{
           type: 'laptop',
-          alt: 'Ecommerce',
+          alt: 'Ecommerce Website',
           textures: [
             {
               srcSet: ` `,
