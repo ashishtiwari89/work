@@ -21,14 +21,14 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I am Ashish Tiwari. A Computer Science Graduate, Full Stack Software Engineer, and Web Developer with hands-on skills, 
+      I am a Computer Science Graduate, Full Stack Software Engineer, and Web Developer with hands-on skills, 
       and more than 10 years of work experience in developing enterprise solutions for small and medium-sized businesses. 
       I'm passionate about building high-quality software solutions that exceed client expectations and drive business results.
       </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
       I am proficint in Java, SpringBoot, Python, Django, JavaScript, React, Node.js, Next.js, Express.js, HTML, and CSS. 
       My extensive background in both backend and frontend development allows me to craft robust, scalable, and user-friendly applications.
-      Currently residing in Mountain View, California, I am actively seeking full-time opportunities as a Software Engineer, Data Engineer, or Website Developer, 
+      I am actively seeking full-time opportunities as a Software Engineer, Data Engineer, or Website Developer, 
       where I can leverage my skills and experience to contribute to innovative projects and impactful solutions.
     </Text>
   </Fragment>
