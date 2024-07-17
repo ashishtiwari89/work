@@ -100,6 +100,7 @@ export const Home = () => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             const sectionId = entry.target.getAttribute('id');
+            console.log(`Section intersecting: ${sectionId}`); // Debugging output
             if (sectionId) {
               history.pushState(null, '', `#${sectionId}`);
             }
