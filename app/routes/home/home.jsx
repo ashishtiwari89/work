@@ -113,7 +113,7 @@ export const Home = () => {
           alt: 'Ecommerce Website',
           textures: [
             {
-              srcSet: ` `,
+              srcSet: `${soon} 1280w`,
               placeholder: sprTexturePlaceholder,
             },
           ],
