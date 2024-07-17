@@ -28,7 +28,8 @@ const ProfileText = ({ visible, titleId }) => (
       I am proficient in Java, SpringBoot, Python, Django, JavaScript, React, Node.js, Next.js, Express.js, HTML, and CSS. 
       My extensive background in both backend and frontend development allows me to craft robust, scalable, and user-friendly applications.
       I am passionate about delivering high-quality software solutions that drive business results and provide exceptional user experiences.
-    </Text>   
+    </Text>
+  </Fragment>
 );
 
 export const Profile = ({ id, visible, sectionRef }) => {
