@@ -74,7 +74,7 @@ export function ProjectSummary({
             collapseDelay={1000}
           />
           <span className={styles.indexNumber} data-visible={visible}>
-            {indexText}
+            Project {indexText}
           </span>
         </div>
         <Heading
