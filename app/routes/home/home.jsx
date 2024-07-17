@@ -19,7 +19,7 @@ import { useEffect, useRef, useState } from 'react';
 import config from '~/config.json';
 import styles from './home.module.css';
 
-// Prefetch draco decoader wasm
+// Prefetch draco decoder wasm
 export const links = () => {
   return [
     {
@@ -54,7 +54,7 @@ export const Home = () => {
   const projectTwo = useRef();
   const projectThree = useRef();
   const about = useRef();
-  
+
   useEffect(() => {
     const sections = [intro, projectOne, projectTwo, projectThree, about];
 
@@ -90,6 +90,33 @@ export const Home = () => {
       indicatorObserver.disconnect();
     };
   }, [visibleSections]);
+
+  // New effect to update the URL based on the currently visible section
+  useEffect(() => {
+    const sections = [intro, projectOne, projectTwo, projectThree, about];
+
+    const urlObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const sectionId = entry.target.getAttribute('id');
+            if (sectionId) {
+              history.pushState(null, '', `#${sectionId}`);
+            }
+          }
+        });
+      },
+      { rootMargin: '0px 0px -50% 0px', threshold: 0.5 }
+    );
+
+    sections.forEach(section => {
+      urlObserver.observe(section.current);
+    });
+
+    return () => {
+      urlObserver.disconnect();
+    };
+  }, []);
 
   return (
     <div className={styles.home}>
@@ -148,7 +175,7 @@ export const Home = () => {
        <ProjectSummary
         id="project-3"
         sectionRef={projectThree}
-        visible={visibleSections.includes(projectOne.current)}
+        visible={visibleSections.includes(projectThree.current)}
         index={3}
         title="ELearning Website for Programming"
         description="Developed a comprehensive e-learning platform specifically designed for computer science and programming courses, utilizing React for the frontend and Java Spring Boot for the backend. 
