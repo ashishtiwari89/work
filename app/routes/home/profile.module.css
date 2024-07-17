@@ -7,7 +7,6 @@
   padding-bottom: 40px;
   display: flex;
   justify-content: center;
-  text-align: justify;
 
   @media (--mediaTablet) {
     padding-top: 50px;
@@ -16,14 +15,12 @@
     height: auto;
     margin-top: 40px;
     margin-bottom: 20px;
-    text-align: justify;
   }
 
   @media (--mediaMobile) {
     margin-top: 0;
     padding-top: var(--space4XL);
     overflow-x: hidden;
-    text-align: justify;
   }
 
   @media (--mediaMobile), (--mediaMobileLS) {
