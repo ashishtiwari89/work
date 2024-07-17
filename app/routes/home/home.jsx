@@ -50,11 +50,11 @@ export const Home = () => {
   const [visibleSections, setVisibleSections] = useState([]);
   const [scrollIndicatorHidden, setScrollIndicatorHidden] = useState(false);
   const intro = useRef();
+  const about = useRef();
   const projectOne = useRef();
   const projectTwo = useRef();
   const projectThree = useRef();
-  const about = useRef();
-
+  
   useEffect(() => {
     const sections = [intro, about, projectOne, projectTwo, projectThree];
 
@@ -150,7 +150,6 @@ export const Home = () => {
           ],
         }}
       />
-
        <ProjectSummary
         id="project-3"
         sectionRef={projectThree}
@@ -158,7 +157,7 @@ export const Home = () => {
         index={3}
         title="ELearning Website for Programming"
         description="Developed a comprehensive e-learning platform specifically designed for computer science and programming courses, utilizing React for the frontend and Java Spring Boot for the backend. 
-      The platform aims to provide an interactive and user-friendly learning experience with extensive course management features."
+        The platform aims to provide an interactive and user-friendly learning experience with extensive course management features."
         buttonText="View Project"
         buttonLink="#"
         model={{
