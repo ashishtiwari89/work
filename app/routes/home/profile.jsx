@@ -70,7 +70,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   collapsed={!visible}
                   collapseDelay={1000}
                 />
-                <div className={styles.tagText} data-visible={visible} style="margin-top: 0px">
+                <div className={styles.tagText} data-visible={visible}>
                   About me
                 </div>
               </div>
