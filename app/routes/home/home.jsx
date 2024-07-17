@@ -54,7 +54,7 @@ export const Home = () => {
   const projectTwo = useRef();
   const projectThree = useRef();
   const about = useRef();
-  
+
   useEffect(() => {
     const sections = [intro, projectOne, projectTwo, projectThree, about];
 
@@ -90,7 +90,7 @@ export const Home = () => {
       indicatorObserver.disconnect();
     };
   }, [visibleSections]);
-
+  
   return (
     <div className={styles.home}>
       <Intro
