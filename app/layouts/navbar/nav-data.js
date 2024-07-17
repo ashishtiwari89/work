@@ -13,7 +13,7 @@ export const navLinks = [
   },
   {
     label: 'Resume',
-    pathname: 'https://drive.google.com/file/d/11AlvrtNqdFQVnP6PEhPwcqiwIQtE5W91',
+    pathname: 'https://ashishtiwari.work/Resume_Ashish_Tiwari.pdf',
     target: '_blank',
   },
   {
