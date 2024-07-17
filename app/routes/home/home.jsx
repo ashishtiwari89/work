@@ -145,6 +145,28 @@ export const Home = () => {
           ],
         }}
       />
+
+       <ProjectSummary
+        id="project-1"
+        sectionRef={projectOne}
+        visible={visibleSections.includes(projectOne.current)}
+        index={1}
+        title="LearnLink ELearning for Programming Website"
+        description="Developed a comprehensive e-learning platform specifically designed for computer science and programming courses, utilizing React for the frontend and Java Spring Boot for the backend. 
+      The platform aims to provide an interactive and user-friendly learning experience with extensive course management features."
+        buttonText="View Project"
+        buttonLink="#"
+        model={{
+          type: 'laptop',
+          alt: 'ELearning',
+          textures: [
+            {
+              srcSet: ` `,
+              placeholder: sprTexturePlaceholder,
+            },
+          ],
+        }}
+      />
       <Profile
         sectionRef={details}
         visible={visibleSections.includes(details.current)}
