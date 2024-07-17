@@ -53,6 +53,17 @@ export const Profile = ({ id, visible, sectionRef }) => {
         {({ visible, nodeRef }) => (
           <div className={styles.content} ref={nodeRef}>
             <div className={styles.column}>
+              <div className={styles.tag} aria-hidden>
+                <Divider
+                  notchWidth="64px"
+                  notchHeight="8px"
+                  collapsed={!visible}
+                  collapseDelay={1000}
+                />
+                <div className={styles.tagText} data-visible={visible}>
+                  About me
+                </div>
+              </div>
               <ProfileText visible={visible} titleId={titleId} />
               <Button
                 secondary
@@ -65,17 +76,6 @@ export const Profile = ({ id, visible, sectionRef }) => {
               </Button>
             </div>
             <div className={styles.column}>
-              <div className={styles.tag} aria-hidden>
-                <Divider
-                  notchWidth="64px"
-                  notchHeight="8px"
-                  collapsed={!visible}
-                  collapseDelay={1000}
-                />
-                <div className={styles.tagText} data-visible={visible}>
-                  About me
-                </div>
-              </div>
               <div className={styles.image}>
                 <Image
                   reveal
