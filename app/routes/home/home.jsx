@@ -152,7 +152,7 @@ export const Home = () => {
         sectionRef={projectThree}
         visible={visibleSections.includes(projectOne.current)}
         index={3}
-        title="ELearning Website for Programming"
+        title="ELearning Website"
         description="Developed a comprehensive e-learning platform specifically designed for computer science and programming courses, utilizing React for the frontend and Java Spring Boot for the backend. 
         The platform aims to provide an interactive and user-friendly learning experience with extensive course management features."
         buttonText="View Project"
