@@ -185,6 +185,7 @@ export const Navbar = () => {
                 data-visible={visible}
                 aria-current={getCurrent(pathname)}
                 onClick={handleMobileNavClick}
+                target="_self"
                 style={cssProps({
                   transitionDelay: numToMs(
                     Number(msToNum(tokens.base.durationS)) + index * 50
