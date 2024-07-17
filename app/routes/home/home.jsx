@@ -1,4 +1,5 @@
 import soon from '~/assets/soon.jpg';
+import soon-phone from '~/assets/soon-phone.jpg';
 import gamestackTexture2Large from '~/assets/gamestack-list-large.jpg';
 import gamestackTexture2Placeholder from '~/assets/gamestack-list-placeholder.jpg';
 import gamestackTexture2 from '~/assets/gamestack-list.jpg';
@@ -136,11 +137,11 @@ export const Home = () => {
           alt: 'Share Market App',
           textures: [
             {
-              srcSet: ` `,
+              srcSet: `${soon-phone} 375w`,
               placeholder: gamestackTexturePlaceholder,
             },
             {
-              srcSet: ` `,
+              srcSet: `${soon-phone} 375w`,
               placeholder: gamestackTexture2Placeholder,
             },
           ],
@@ -161,7 +162,7 @@ export const Home = () => {
           alt: 'ELearning',
           textures: [
             {
-              srcSet: ` `,
+              srcSet: `${soon} 1280w`,
               placeholder: sprTexturePlaceholder,
             },
           ],
