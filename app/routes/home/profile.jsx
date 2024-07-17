@@ -28,8 +28,6 @@ const ProfileText = ({ visible, titleId }) => (
     <Text className={styles.description} data-visible={visible} size="l" as="p">
       I am proficint in Java, SpringBoot, Python, Django, JavaScript, React, Node.js, Next.js, Express.js, HTML, and CSS. 
       My extensive background in both backend and frontend development allows me to craft robust, scalable, and user-friendly applications.
-      I am actively seeking full-time opportunities as a Software Engineer, Data Engineer, or Website Developer, 
-      where I can leverage my skills and experience to contribute to innovative projects and impactful solutions.
     </Text>
   </Fragment>
 );
