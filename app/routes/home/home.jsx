@@ -1,3 +1,4 @@
+import soon from '~/assets/soon.jpg';
 import gamestackTexture2Large from '~/assets/gamestack-list-large.jpg';
 import gamestackTexture2Placeholder from '~/assets/gamestack-list-placeholder.jpg';
 import gamestackTexture2 from '~/assets/gamestack-list.jpg';
