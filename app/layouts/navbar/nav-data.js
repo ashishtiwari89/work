@@ -6,20 +6,20 @@ export const navLinks = [
     pathname: '/',
   },
   {
-    label: 'About',
-    pathname: '/#about',
-  },
-  {
     label: 'Projects',
     pathname: '/#project-1',
   },
   {
-    label: 'Contact',
-    pathname: '/contact',
+    label: 'About',
+    pathname: '/#about',
   },
   {
     label: 'Resume',
     pathname: 'https://drive.google.com/file/d/11AlvrtNqdFQVnP6PEhPwcqiwIQtE5W91',
+  },
+  {
+    label: 'Contact',
+    pathname: '/contact',
   },
 ];
 
