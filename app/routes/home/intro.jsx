@@ -118,16 +118,16 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
               data-hidden={scrollIndicatorHidden}
               onClick={handleScrollClick}
             >
-              <VisuallyHidden>Scroll to bio</VisuallyHidden>
+              <VisuallyHidden>Scroll to projects</VisuallyHidden>
             </RouterLink>
             <RouterLink
-              to="/#about"
+              to="/#project-1"
               className={styles.mobileScrollIndicator}
               data-status={status}
               data-hidden={scrollIndicatorHidden}
               onClick={handleScrollClick}
             >
-              <VisuallyHidden>Scroll to bio</VisuallyHidden>
+              <VisuallyHidden>Scroll to projects</VisuallyHidden>
               <svg
                 aria-hidden
                 stroke="currentColor"
