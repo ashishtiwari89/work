@@ -87,7 +87,7 @@ export async function action({ context, request }) {
           },
         },
         Subject: {
-          Data: `Message from ${sender} <${email}>`,
+          Data: `Portfolio message from ${sender}`,
         },
       },
       Source: `${sender} <${context.cloudflare.env.FROM_EMAIL}>`,
