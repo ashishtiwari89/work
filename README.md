@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/public/favicon1.svg" width="50" alt="Logo" />
+  <img src="/public/icon.svg" width="50" alt="Logo" />
 </p>
 <h1 align="center">Ashish Tiwari's Portfolio</h1>
 
