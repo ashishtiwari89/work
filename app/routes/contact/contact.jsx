@@ -22,7 +22,7 @@ export const meta = () => {
   return baseMeta({
     title: 'Contact',
     description:
-      'Send me a message if you’re interested in discussing a project or if you just want to say hi',
+      'Send me a message',
   });
 };
 
@@ -41,6 +41,7 @@ export async function action({ context, request }) {
 
   const formData = await request.formData();
   const isBot = String(formData.get('name'));
+  const name = String(formData.get('name'));
   const email = String(formData.get('email'));
   const message = String(formData.get('message'));
   const errors = {};
@@ -82,10 +83,10 @@ export async function action({ context, request }) {
           },
         },
         Subject: {
-          Data: `Portfolio message from ${email}`,
+          Data: `Message from ${email}`,
         },
       },
-      Source: `Portfolio <${context.cloudflare.env.FROM_EMAIL}>`,
+      Source: `${name} <${context.cloudflare.env.FROM_EMAIL}>`,
       ReplyToAddresses: [email],
     })
   );
@@ -95,6 +96,7 @@ export async function action({ context, request }) {
 
 export const Contact = () => {
   const errorRef = useRef();
+  const name = useFormInput('');
   const email = useFormInput('');
   const message = useFormInput('');
   const initDelay = tokens.base.durationS;
@@ -119,7 +121,7 @@ export const Contact = () => {
               as="h1"
               style={getDelay(tokens.base.durationXS, initDelay, 0.3)}
             >
-              <DecoderText text="Say hello" start={status !== 'exited'} delay={300} />
+              <DecoderText text="Contact me" start={status !== 'exited'} delay={300} />
             </Heading>
             <Divider
               className={styles.divider}
@@ -132,6 +134,18 @@ export const Contact = () => {
               label="Name"
               name="name"
               maxLength={MAX_EMAIL_LENGTH}
+            />
+            <Input
+              required
+              className={styles.input}
+              data-status={status}
+              style={getDelay(tokens.base.durationXS, initDelay)}
+              autoComplete="name"
+              label="Your name"
+              type="text"
+              name="name"
+              maxLength={MAX_EMAIL_LENGTH}
+              {...name}
             />
             <Input
               required
@@ -215,7 +229,7 @@ export const Contact = () => {
               data-status={status}
               style={getDelay(tokens.base.durationXS)}
             >
-              I’ll get back to you within a couple days, sit tight
+              I’ll get back to you soon
             </Text>
             <Button
               secondary
