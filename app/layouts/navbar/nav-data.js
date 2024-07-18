@@ -18,7 +18,7 @@ export const navLinks = [
   },
   {
     label: 'Contact',
-    pathname: 'mailto:ashishtiwari.b@gmail.com',
+    pathname: '/contact',
     target: '_self',
   },
 ];
