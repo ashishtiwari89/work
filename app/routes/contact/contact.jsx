@@ -41,7 +41,7 @@ export async function action({ context, request }) {
 
   const formData = await request.formData();
   const isBot = String(formData.get('name'));
-  const name = String(formData.get('name'));
+  const sender = String(formData.get('sender'));
   const email = String(formData.get('email'));
   const message = String(formData.get('message'));
   const errors = {};
@@ -79,14 +79,14 @@ export async function action({ context, request }) {
       Message: {
         Body: {
           Text: {
-            Data: `From: ${email}\n\n${message}`,
+            Data: `From: ${sender}\n\n${email}\n\n${message}`,
           },
         },
         Subject: {
           Data: `Message from ${email}`,
         },
       },
-      Source: `${name} <${context.cloudflare.env.FROM_EMAIL}>`,
+      Source: `${sender} <${context.cloudflare.env.FROM_EMAIL}>`,
       ReplyToAddresses: [email],
     })
   );
@@ -96,7 +96,7 @@ export async function action({ context, request }) {
 
 export const Contact = () => {
   const errorRef = useRef();
-  const name = useFormInput('');
+  const sender = useFormInput('');
   const email = useFormInput('');
   const message = useFormInput('');
   const initDelay = tokens.base.durationS;
@@ -140,12 +140,12 @@ export const Contact = () => {
               className={styles.input}
               data-status={status}
               style={getDelay(tokens.base.durationXS, initDelay)}
-              autoComplete="name"
+              autoComplete="sender"
               label="Your name"
               type="text"
-              name="name"
+              name="sender"
               maxLength={MAX_EMAIL_LENGTH}
-              {...name}
+              {...sender}
             />
             <Input
               required
