@@ -21,7 +21,8 @@ import styles from './contact.module.css';
 export const meta = () => {
   return baseMeta({
     title: 'Contact',
-    description: 'Send me a message if you’re interested in discussing a project or if you just want to say hi',
+    description:
+      'Send me a message if you’re interested in discussing a project or if you just want to say hi',
   });
 };
 
@@ -33,8 +34,8 @@ export async function action({ context, request }) {
   const ses = new SESClient({
     region: 'us-east-1',
     credentials: {
-      accessKeyId: context.env.AWS_ACCESS_KEY_ID,
-      secretAccessKey: context.env.AWS_SECRET_ACCESS_KEY,
+      accessKeyId: context.cloudflare.env.AWS_ACCESS_KEY_ID,
+      secretAccessKey: context.cloudflare.env.AWS_SECRET_ACCESS_KEY,
     },
   });
 
@@ -72,7 +73,7 @@ export async function action({ context, request }) {
   await ses.send(
     new SendEmailCommand({
       Destination: {
-        ToAddresses: [context.env.EMAIL],
+        ToAddresses: [context.cloudflare.env.EMAIL],
       },
       Message: {
         Body: {
@@ -84,7 +85,7 @@ export async function action({ context, request }) {
           Data: `Portfolio message from ${email}`,
         },
       },
-      Source: `Portfolio <${context.env.FROM_EMAIL}>`,
+      Source: `Portfolio <${context.cloudflare.env.FROM_EMAIL}>`,
       ReplyToAddresses: [email],
     })
   );
@@ -105,7 +106,12 @@ export const Contact = () => {
     <Section className={styles.contact}>
       <Transition unmount in={!actionData?.success} timeout={1600}>
         {({ status, nodeRef }) => (
-          <Form unstable_viewTransition className={styles.form} method="post" ref={nodeRef}>
+          <Form
+            unstable_viewTransition
+            className={styles.form}
+            method="post"
+            ref={nodeRef}
+          >
             <Heading
               className={styles.title}
               data-status={status}
@@ -115,9 +121,18 @@ export const Contact = () => {
             >
               <DecoderText text="Say hello" start={status !== 'exited'} delay={300} />
             </Heading>
-            <Divider className={styles.divider} data-status={status} style={getDelay(tokens.base.durationXS, initDelay, 0.4)} />
+            <Divider
+              className={styles.divider}
+              data-status={status}
+              style={getDelay(tokens.base.durationXS, initDelay, 0.4)}
+            />
             {/* Hidden honeypot field to identify bots */}
-            <Input className={styles.botkiller} label="Name" name="name" maxLength={MAX_EMAIL_LENGTH} />
+            <Input
+              className={styles.botkiller}
+              label="Name"
+              name="name"
+              maxLength={MAX_EMAIL_LENGTH}
+            />
             <Input
               required
               className={styles.input}
@@ -142,9 +157,20 @@ export const Contact = () => {
               maxLength={MAX_MESSAGE_LENGTH}
               {...message}
             />
-            <Transition unmount in={!sending && actionData?.errors} timeout={msToNum(tokens.base.durationM)}>
+            <Transition
+              unmount
+              in={!sending && actionData?.errors}
+              timeout={msToNum(tokens.base.durationM)}
+            >
               {({ status: errorStatus, nodeRef }) => (
-                <div className={styles.formError} ref={nodeRef} data-status={errorStatus} style={cssProps({ height: errorStatus ? errorRef.current?.offsetHeight : 0 })}>
+                <div
+                  className={styles.formError}
+                  ref={nodeRef}
+                  data-status={errorStatus}
+                  style={cssProps({
+                    height: errorStatus ? errorRef.current?.offsetHeight : 0,
+                  })}
+                >
                   <div className={styles.formErrorContent} ref={errorRef}>
                     <div className={styles.formErrorMessage}>
                       <Icon className={styles.formErrorIcon} icon="error" />
@@ -174,10 +200,21 @@ export const Contact = () => {
       <Transition unmount in={actionData?.success}>
         {({ status, nodeRef }) => (
           <div className={styles.complete} aria-live="polite" ref={nodeRef}>
-            <Heading level={3} as="h3" className={styles.completeTitle} data-status={status}>
+            <Heading
+              level={3}
+              as="h3"
+              className={styles.completeTitle}
+              data-status={status}
+            >
               Message Sent
             </Heading>
-            <Text size="l" as="p" className={styles.completeText} data-status={status} style={getDelay(tokens.base.durationXS)}>
+            <Text
+              size="l"
+              as="p"
+              className={styles.completeText}
+              data-status={status}
+              style={getDelay(tokens.base.durationXS)}
+            >
               I’ll get back to you within a couple days, sit tight
             </Text>
             <Button
@@ -202,4 +239,3 @@ export const Contact = () => {
 function getDelay(delayMs, offset = numToMs(0), multiplier = 1) {
   const numDelay = msToNum(delayMs) * multiplier;
   return cssProps({ delay: numToMs((msToNum(offset) + numDelay).toFixed(0)) });
-}
