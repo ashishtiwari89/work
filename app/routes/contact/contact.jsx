@@ -50,6 +50,10 @@ export async function action({ context, request }) {
   if (isBot) return json({ success: true });
 
   // Handle input validation on the server
+  if (!sender) {
+    errors.sender = 'Please enter your name.';
+  }
+  
   if (!email || !EMAIL_PATTERN.test(email)) {
     errors.email = 'Please enter a valid email address.';
   }
@@ -79,11 +83,11 @@ export async function action({ context, request }) {
       Message: {
         Body: {
           Text: {
-            Data: `From: ${sender}\n\n${email}\n\n${message}`,
+            Data: `From: ${sender} <${email}>\n\n${message}`,
           },
         },
         Subject: {
-          Data: `Message from ${email}`,
+          Data: `Message from ${sender} <${email}>`,
         },
       },
       Source: `${sender} <${context.cloudflare.env.FROM_EMAIL}>`,
