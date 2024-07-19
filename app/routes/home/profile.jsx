@@ -27,7 +27,10 @@ const ProfileText = ({ visible, titleId }) => (
     <Text className={styles.description} data-visible={visible} size="l" as="p">
       I am proficient in Java, SpringBoot, Python, Django, JavaScript, React, Node.js, Next.js, Express.js, HTML, and CSS. 
       My extensive background in both backend and frontend development allows me to craft robust, scalable, and user-friendly applications.
-      I am passionate about delivering high-quality software solutions that drive business results and provide exceptional user experiences.
+    </Text>
+    <Text className={styles.description} data-visible={visible} size="l" as="p">
+    Additionally, I have significant experience in data analysis and data engineering, utilizing big data tools and technologies such as Apache Spark, Cassandra, Kafka, Tableau, Databricks, and Snowflake. I am also well-versed in cloud solution architecture with AWS, Azure, and Google Cloud.
+    I am passionate about delivering high-quality software solutions that drive business results and provide exceptional user experiences. My goal is to exceed client expectations and contribute to the success of their businesses through innovative and efficient software solutions.
     </Text>
   </Fragment>
 );
