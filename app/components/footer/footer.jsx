@@ -11,7 +11,7 @@ export const Footer = ({ className }) => (
         {`© ${new Date().getFullYear()}.`}
       </span>
       <Link secondary className={styles.link} href="https://ashishtiwari.work" target="_self">
-        Website design & development by Ashish Tiwari
+       Ashish Tiwari
       </Link>
     </Text>
   </footer>
