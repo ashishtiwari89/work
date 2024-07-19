@@ -21,15 +21,18 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I am a Computer Science Graduate, Full Stack Software Engineer and Web Developer, with hands-on skills, and more than 10 years of experience in developing enterprise solutions for small and medium-sized businesses. 
+      I am a Computer Science Graduate, Full Stack Software Engineer, and Web Developer, with hands-on skills, and more than 10 years of experience in developing enterprise solutions for small and medium-sized businesses.
+      </Text>
+      <Text className={styles.description} data-visible={visible} size="l" as="p">
       My expertise spans across the full software development lifecycle, from initial requirements gathering and design to implementation, testing, and deployment.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I am proficient in Java, SpringBoot, Python, Django, JavaScript, React, Node.js, Next.js, Express.js, HTML, and CSS. 
-      My extensive background in both backend and frontend development allows me to craft robust, scalable, and user-friendly applications.
+      I am proficient in Java, SpringBoot, Python, Django, JavaScript, React, Node.js, Next.js, Express.js, HTML, and CSS. My extensive background in both backend and frontend development allows me to craft robust, scalable, and user-friendly applications.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
     Additionally, I have significant experience in data analysis and data engineering, utilizing big data tools and technologies such as Apache Spark, Cassandra, Kafka, Tableau, Databricks, and Snowflake. I am also well-versed in cloud solution architecture with AWS, Azure, and Google Cloud.
+    </Text>
+    <Text className={styles.description} data-visible={visible} size="l" as="p">
     I am passionate about delivering high-quality software solutions that drive business results and provide exceptional user experiences. My goal is to exceed client expectations and contribute to the success of their businesses through innovative and efficient software solutions.
     </Text>
   </Fragment>
