@@ -114,9 +114,9 @@
 .image {
   position: relative;
   width: 100%;
-  margin-top: 125px;
+  margin-top: 200px;
   @media (--mediaMobile) {
-    margin-top: 30px;
+    margin-top: 50px;
   }
 }
 
