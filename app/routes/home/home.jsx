@@ -43,7 +43,7 @@ export const links = () => {
 
 export const meta = () => {
   return baseMeta({
-    title: 'Software Engineer + Web Developer',
+    title: 'Software Engineer / Data Analyst / Cloud Architect',
     description: `Portfolio website of ${config.name}`,
   });
 };
