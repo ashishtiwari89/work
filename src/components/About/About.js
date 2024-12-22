@@ -7,7 +7,8 @@ const About = () => {
   const { name, role, description, resume, social } = about
 
   return (
-    <div className='about center' id='about-me'>
+    <section id='about' className='section about'>
+    <div className='about center'>
       {name && (
         <h1>
           Hi, I am <span className='about__name'>{name}.</span>
@@ -51,6 +52,7 @@ const About = () => {
         )}
       </div>
     </div>
+  </section>
   )
 }
 
