@@ -19,9 +19,7 @@ const Navbar = () => {
         style={{ display: showNavList ? 'flex' : null }}
         className='nav__list'
       >
-        <li>ZSA</li>
         
-        {about.length ? (
           <li className='nav__list-item'>
             <a
               href='#about-me'
@@ -31,7 +29,7 @@ const Navbar = () => {
               About Me
             </a>
           </li>
-        ) : null}
+
 
         {projects.length ? (
           <li className='nav__list-item'>
