@@ -54,6 +54,16 @@ const Navbar = () => {
           </li>
         ) : null}
 
+          <li className='nav__list-item'>
+            <a
+              href='#resume'
+              onClick={toggleNavList}
+              className='link link--nav'
+            >
+              Resume
+            </a>
+          </li>
+
         {contact.email ? (
           <li className='nav__list-item'>
             <a
