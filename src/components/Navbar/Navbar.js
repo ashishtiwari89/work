@@ -6,7 +6,6 @@ import CloseIcon from '@material-ui/icons/Close'
 import { ThemeContext } from '../../contexts/theme'
 import { projects, skills, contact, about } from '../../portfolio'
 import './Navbar.css'
-import About from '../About/About'
 
 const Navbar = () => {
   const [{ themeName, toggleTheme }] = useContext(ThemeContext)
