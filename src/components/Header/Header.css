@@ -16,6 +16,10 @@
   text-decoration: none !important;
 }
 
+.logotitle::before {
+  height: 0em !important;
+}
+
 @media (max-width: 600px) {
   .header {
     height: 6em;
