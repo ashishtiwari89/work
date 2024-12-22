@@ -9,11 +9,9 @@
 .logotitle{
   font-size: 2em;
   text-transform: lowercase;
-  color: #802290 !important;
 }
 
 .logotitle:hover {
-  color: #802290 !important;
   text-decoration: none !important;
 }
 
