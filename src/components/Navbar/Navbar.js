@@ -27,7 +27,7 @@ const Navbar = () => {
               onClick={toggleNavList}
               className='link link--nav'
             >
-              About Me
+              About
             </a>
           </li>
           ) : null}

@@ -7,8 +7,7 @@ const About = () => {
   const { name, role, description, resume, social } = about
 
   return (
-    <section id='about' className='section about'>
-    <div className='about center'>
+    <section id='about' className='section about center'>
       {name && (
         <h1>
           Hi, I am <span className='about__name'>{name}.</span>
@@ -51,7 +50,6 @@ const About = () => {
           </>
         )}
       </div>
-    </div>
   </section>
   )
 }
