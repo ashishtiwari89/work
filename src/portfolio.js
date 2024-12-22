@@ -9,7 +9,7 @@ const about = {
   name: 'Ashish Tiwari',
   role: 'Full Stack Developer',
   description:
-    'I’m a Full-Stack Software Engineer with over 7 years of experience building scalable, maintainable systems that drive business success. Proficient in Java, Spring Boot, React, Node.js, microservices architecture, and API development. I deliver seamless solutions across backend and frontend development. My expertise spans API design, cloud-native technologies, and CI/CD pipelines using Docker and Kubernetes. I’ve led teams to optimize legacy systems, enhance performance, and create user-friendly applications that align with business goals. Passionate about solving real-world challenges, I focus on crafting impactful, efficient, and adaptable platforms that empower organizations to grow and innovate.',
+    'I am a Full-Stack Software Engineer with over 7 years of experience in developing intuitive user interfaces and robust backend systems. Proficient in React, JavaScript, Java, Spring Boot, and Node.js, I specialize in creating seamless, high-performance applications. My expertise includes API design, microservices architecture, and cloud-native technologies, ensuring efficient and scalable solutions. I am passionate about building systems that drive business success and innovation.',
   resume: 'https://example.com',
   social: {
     linkedin: 'https://linkedin.com',
