@@ -22,7 +22,7 @@ const Navbar = () => {
         {about.length ? (
           <li className='nav__list-item'>
             <a
-              href='#about'
+              href='#about-me'
               onClick={toggleNavList}
               className='link link--nav'
             >
