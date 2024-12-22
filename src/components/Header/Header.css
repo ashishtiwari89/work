@@ -9,6 +9,11 @@
 .logotitle{
   font-size: 2em;
   text-transform: lowercase;
+  text-decoration: none;
+}
+
+.logotitle:hover {
+  color: darkblue;
 }
 
 @media (max-width: 600px) {
