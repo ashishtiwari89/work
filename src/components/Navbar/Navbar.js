@@ -6,6 +6,7 @@ import CloseIcon from '@material-ui/icons/Close'
 import { ThemeContext } from '../../contexts/theme'
 import { projects, skills, contact, about } from '../../portfolio'
 import './Navbar.css'
+import About from '../About/About'
 
 const Navbar = () => {
   const [{ themeName, toggleTheme }] = useContext(ThemeContext)
@@ -19,7 +20,7 @@ const Navbar = () => {
         style={{ display: showNavList ? 'flex' : null }}
         className='nav__list'
       >
-        
+         {about.length ? (
           <li className='nav__list-item'>
             <a
               href='#about-me'
@@ -29,7 +30,7 @@ const Navbar = () => {
               About Me
             </a>
           </li>
-
+          ) : null}
 
         {projects.length ? (
           <li className='nav__list-item'>
