@@ -1,6 +1,7 @@
 {
-  "name": "ashishtiwari",
+  "name": "cleanfolio",
   "version": "0.1.0",
+  "license": "MIT",
   "private": true,
   "homepage": "https://ashishtiwari89.github.io/work",
   "dependencies": {
