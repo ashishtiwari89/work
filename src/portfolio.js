@@ -1,7 +1,7 @@
 const header = {
   // all the properties are optional - can be left empty or deleted
   homepage: 'https://ashishtiwari89.github.io/work',
-  title: 'Ashish Tiwari',
+  title: 'AT.',
 }
 
 const about = {
