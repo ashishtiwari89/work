@@ -44,6 +44,54 @@ const projects = [
     sourceCode: 'https://github.com',
     livePreview: 'https://github.com',
   },
+  {
+    name: 'Collaborative Workspace',
+    description:
+      'Collaborative workspace with task management, real-time chat, and scheduling, using Spring Boot, React, PostgreSQL for data storage, and Apache Kafka for event streaming.',
+    stack: ['SASS', 'TypeScript', 'React'],
+    sourceCode: 'https://github.com',
+    livePreview: 'https://github.com',
+  },
+  {
+    name: 'Collaborative Workspace',
+    description:
+      'Collaborative workspace with task management, real-time chat, and scheduling, using Spring Boot, React, PostgreSQL for data storage, and Apache Kafka for event streaming.',
+    stack: ['SASS', 'TypeScript', 'React'],
+    sourceCode: 'https://github.com',
+    livePreview: 'https://github.com',
+  },
+  {
+    name: 'Collaborative Workspace',
+    description:
+      'Collaborative workspace with task management, real-time chat, and scheduling, using Spring Boot, React, PostgreSQL for data storage, and Apache Kafka for event streaming.',
+    stack: ['SASS', 'TypeScript', 'React'],
+    sourceCode: 'https://github.com',
+    livePreview: 'https://github.com',
+  },
+  {
+    name: 'Collaborative Workspace',
+    description:
+      'Collaborative workspace with task management, real-time chat, and scheduling, using Spring Boot, React, PostgreSQL for data storage, and Apache Kafka for event streaming.',
+    stack: ['SASS', 'TypeScript', 'React'],
+    sourceCode: 'https://github.com',
+    livePreview: 'https://github.com',
+  },
+  {
+    name: 'Collaborative Workspace',
+    description:
+      'Collaborative workspace with task management, real-time chat, and scheduling, using Spring Boot, React, PostgreSQL for data storage, and Apache Kafka for event streaming.',
+    stack: ['SASS', 'TypeScript', 'React'],
+    sourceCode: 'https://github.com',
+    livePreview: 'https://github.com',
+  },
+  {
+    name: 'Collaborative Workspace',
+    description:
+      'Collaborative workspace with task management, real-time chat, and scheduling, using Spring Boot, React, PostgreSQL for data storage, and Apache Kafka for event streaming.',
+    stack: ['SASS', 'TypeScript', 'React'],
+    sourceCode: 'https://github.com',
+    livePreview: 'https://github.com',
+  },
 ]
 
 const skills = [
